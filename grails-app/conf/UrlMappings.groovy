@@ -230,6 +230,11 @@ class UrlMappings {
             action = [POST:"addItemsToShipment"]
         }
 
+        "/api/combinedShipmentItems/getProductsInOrders"(parseRequest: true) {
+            controller = "combinedShipmentItemApi"
+            action = [GET:"getProductsInOrders"]
+        }
+
         // Standard REST APIs
 
         "/api/${resource}s"(parseRequest: true) {
